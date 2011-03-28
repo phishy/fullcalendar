@@ -75,8 +75,8 @@ zip:
 	
 	@echo "copying jquery..."
 	@mkdir -p ${BUILD_DIR}/fullcalendar/jquery
-	@cp lib/${JQ} ${BUILD_DIR}/fullcalendar/jquery
-	@cp lib/${JQUI} ${BUILD_DIR}/fullcalendar/jquery
+	@cp -r lib/${JQ} ${BUILD_DIR}/fullcalendar/jquery
+	@cp -r lib/${JQUI} ${BUILD_DIR}/fullcalendar/jquery
 	
 	@echo "building demos..."
 	@mkdir -p ${BUILD_DIR}/fullcalendar/demos
